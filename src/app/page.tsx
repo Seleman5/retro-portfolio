@@ -1,65 +1,162 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+
+const navItems = ["About", "Experience", "Projects", "Skills", "Contact"];
+
+const sections = [
+  {
+    id: "about",
+    label: "About",
+    eyebrow: "01",
+    body: "I focus on quality-minded engineering, clear user experiences, and dependable delivery across web apps, test automation, and release workflows.",
+  },
+  {
+    id: "experience",
+    label: "Experience",
+    eyebrow: "02",
+    body: "Hands-on with automated testing, debugging, frontend development, and turning product expectations into stable software behavior.",
+  },
+  {
+    id: "projects",
+    label: "Projects",
+    eyebrow: "03",
+    body: "A curated set of test automation, developer tooling, and polished application work will live here as the portfolio grows.",
+  },
+  {
+    id: "skills",
+    label: "Skills",
+    eyebrow: "04",
+    body: "TypeScript, React, Next.js, Tailwind CSS, Playwright, QA strategy, CI workflows, accessibility checks, and user-focused development.",
+  },
+  {
+    id: "contact",
+    label: "Contact",
+    eyebrow: "05",
+    body: "Open to thoughtful software engineering, quality engineering, and product-minded development conversations.",
+  },
+];
+
+export const metadata: Metadata = {
+  title: "Seleman Shinwarie | Software Test Engineer / Developer",
+  description:
+    "Professional portfolio for Seleman Shinwarie, a Software Test Engineer and Developer.",
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,#29313f_0%,#12151b_42%,#050609_100%)] px-4 py-8 text-slate-100 sm:px-6 lg:px-8">
+      <div className="mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-6xl flex-col items-center justify-center gap-6">
+        <div className="crt-monitor w-full max-w-5xl" aria-label="Retro CRT portfolio monitor">
+          <div className="crt-topbar">
+            <span className="crt-vent" />
+            <span className="crt-brand">SELEMAN.SYSTEM</span>
+            <span className="crt-power" aria-hidden="true" />
+          </div>
+
+          <div className="crt-bezel">
+            <div className="crt-screen">
+              <div className="crt-scanlines" aria-hidden="true" />
+              <div className="crt-glow" aria-hidden="true" />
+
+              <div className="relative z-10 flex min-h-[min(68vh,690px)] flex-col gap-8 p-5 text-[#d8fff0] sm:p-7 lg:p-10">
+                <nav
+                  className="flex flex-wrap items-center gap-2 border-b border-emerald-200/15 pb-4 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-emerald-100/75 sm:gap-3 sm:tracking-[0.22em]"
+                  aria-label="Portfolio sections"
+                >
+                  {navItems.map((item) => (
+                    <a
+                      className="rounded-sm border border-emerald-200/10 bg-emerald-200/[0.03] px-2.5 py-1.5 transition hover:border-emerald-200/35 hover:bg-emerald-200/10 hover:text-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-200/45"
+                      href={`#${item.toLowerCase()}`}
+                      key={item}
+                    >
+                      {item}
+                    </a>
+                  ))}
+                </nav>
+
+                <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+                  <div className="max-w-3xl">
+                    <p className="mb-4 font-mono text-xs uppercase tracking-[0.28em] text-amber-200/80">
+                      Portfolio boot sequence complete
+                    </p>
+                    <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+                      Seleman Shinwarie
+                    </h1>
+                    <p className="mt-3 font-mono text-xs uppercase tracking-[0.12em] text-emerald-200 sm:text-base sm:tracking-[0.22em]">
+                      Software Test Engineer / Developer
+                    </p>
+                    <p className="mt-6 max-w-2xl text-base leading-8 text-slate-100/86 sm:text-lg">
+                      I build reliable software, test automation, and polished
+                      user-focused apps.
+                    </p>
+                    <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                      <a
+                        className="inline-flex items-center justify-center rounded-sm border border-emerald-200/70 bg-emerald-300 px-5 py-3 text-sm font-bold uppercase tracking-[0.1em] text-slate-950 shadow-[0_0_22px_rgba(110,231,183,0.25)] transition hover:bg-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-100 sm:tracking-[0.16em]"
+                        href="#projects"
+                      >
+                        View Projects
+                      </a>
+                      <a
+                        className="inline-flex items-center justify-center rounded-sm border border-amber-200/50 bg-amber-200/10 px-5 py-3 text-sm font-bold uppercase tracking-[0.1em] text-amber-100 transition hover:bg-amber-200/20 focus:outline-none focus:ring-2 focus:ring-amber-100/70 sm:tracking-[0.16em]"
+                        href="#contact"
+                      >
+                        Contact Me
+                      </a>
+                    </div>
+                  </div>
+
+                  <aside className="border-l border-emerald-200/15 pl-5 font-mono text-xs uppercase tracking-[0.18em] text-emerald-100/70 sm:text-sm">
+                    <p className="text-emerald-200">Status</p>
+                    <dl className="mt-4 grid gap-3">
+                      <div className="flex items-center justify-between gap-4 border-b border-emerald-200/10 pb-2">
+                        <dt>Focus</dt>
+                        <dd className="text-right text-white">Quality + UX</dd>
+                      </div>
+                      <div className="flex items-center justify-between gap-4 border-b border-emerald-200/10 pb-2">
+                        <dt>Mode</dt>
+                        <dd className="text-right text-white">Building</dd>
+                      </div>
+                      <div className="flex items-center justify-between gap-4 border-b border-emerald-200/10 pb-2">
+                        <dt>Signal</dt>
+                        <dd className="text-right text-white">Clear</dd>
+                      </div>
+                    </dl>
+                  </aside>
+                </section>
+
+                <section className="grid gap-3 lg:grid-cols-5" aria-label="Prepared portfolio sections">
+                  {sections.map((section) => (
+                    <article
+                      className="rounded-sm border border-emerald-200/14 bg-slate-950/35 p-4 shadow-[inset_0_0_24px_rgba(16,185,129,0.04)]"
+                      id={section.id}
+                      key={section.id}
+                    >
+                      <p className="font-mono text-[0.68rem] font-bold uppercase tracking-[0.2em] text-amber-200/80">
+                        {section.eyebrow}
+                      </p>
+                      <h2 className="mt-3 text-lg font-semibold text-white">
+                        {section.label}
+                      </h2>
+                      <p className="mt-3 text-sm leading-6 text-slate-100/74">
+                        {section.body}
+                      </p>
+                    </article>
+                  ))}
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div className="crt-controls" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+            <span className="crt-knob" />
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        <div className="crt-neck" aria-hidden="true" />
+        <div className="crt-base" aria-hidden="true" />
+      </div>
+    </main>
   );
 }
