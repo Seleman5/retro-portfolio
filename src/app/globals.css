@@ -33,15 +33,15 @@ body {
 
 .crt-monitor {
   position: relative;
-  border: 1px solid rgba(226, 232, 240, 0.14);
+  border: 1px solid #8e846a;
   border-radius: 1.35rem 1.35rem 0.8rem 0.8rem;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent 28%),
-    linear-gradient(180deg, #343844 0%, #1d2029 48%, #12151c 100%);
+    linear-gradient(115deg, rgba(255, 255, 255, 0.52), transparent 20%),
+    linear-gradient(180deg, #eee8cc 0%, #d5cda9 48%, #b8ad89 100%);
   box-shadow:
     0 34px 90px rgba(0, 0, 0, 0.62),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    inset 0 -18px 38px rgba(0, 0, 0, 0.38);
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    inset 0 -18px 38px rgba(89, 78, 54, 0.25);
   padding: clamp(0.85rem, 2vw, 1.45rem);
 }
 
@@ -51,7 +51,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 0.1rem 0.35rem 0.85rem;
-  color: rgba(226, 232, 240, 0.62);
+  color: rgba(82, 75, 56, 0.76);
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.7rem;
   font-weight: 700;
@@ -64,8 +64,8 @@ body {
   border-radius: 999px;
   background: repeating-linear-gradient(
     90deg,
-    rgba(15, 23, 42, 0.82) 0 0.35rem,
-    rgba(148, 163, 184, 0.22) 0.35rem 0.48rem
+    rgba(89, 82, 62, 0.8) 0 0.35rem,
+    rgba(255, 250, 218, 0.35) 0.35rem 0.48rem
   );
 }
 
@@ -79,18 +79,19 @@ body {
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 999px;
-  background: #7df0b5;
+  border: 1px solid rgba(82, 75, 56, 0.4);
+  background: #73d895;
   box-shadow: 0 0 18px rgba(125, 240, 181, 0.9);
 }
 
 .crt-bezel {
   border-radius: 1rem 1rem 0.55rem 0.55rem;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.07), transparent 22%),
-    linear-gradient(180deg, #0e1118 0%, #171b23 100%);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.38), transparent 22%),
+    linear-gradient(180deg, #bcb28f 0%, #998f70 100%);
   box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-    inset 0 0 38px rgba(0, 0, 0, 0.84);
+    inset 0 0 0 1px rgba(255, 251, 225, 0.35),
+    inset 0 0 38px rgba(64, 57, 43, 0.48);
   padding: clamp(0.65rem, 1.6vw, 1.1rem);
 }
 
@@ -158,17 +159,18 @@ body {
   width: 0.72rem;
   height: 0.72rem;
   border-radius: 999px;
-  background: linear-gradient(145deg, #6f7480, #1a1d25);
+  border: 1px solid rgba(83, 77, 61, 0.46);
+  background: linear-gradient(145deg, #d6d1bf, #8c877d);
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.24),
-    0 4px 8px rgba(0, 0, 0, 0.35);
+    inset 0 1px 1px rgba(255, 255, 255, 0.7),
+    0 4px 8px rgba(74, 65, 48, 0.28);
 }
 
 .crt-controls .crt-knob {
   width: 1.15rem;
   height: 1.15rem;
   margin-top: -0.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(83, 77, 61, 0.62);
 }
 
 .crt-neck {
@@ -176,17 +178,20 @@ body {
   height: clamp(1.3rem, 3vw, 2.2rem);
   margin-top: -0.65rem;
   border-radius: 0 0 0.65rem 0.65rem;
-  background: linear-gradient(180deg, #242833, #11141b);
-  box-shadow: inset 0 -10px 18px rgba(0, 0, 0, 0.38);
+  border: 1px solid #968b6d;
+  background: linear-gradient(180deg, #c9c19f, #958967);
+  box-shadow: inset 0 -10px 18px rgba(74, 65, 48, 0.24);
 }
 
 .crt-base {
   width: clamp(12rem, 38vw, 22rem);
   height: clamp(1rem, 2.5vw, 1.45rem);
-  border: 1px solid rgba(226, 232, 240, 0.1);
+  border: 1px solid #8d8267;
   border-radius: 999px 999px 0.55rem 0.55rem;
-  background: linear-gradient(180deg, #303540, #11141a);
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.55);
+  background: linear-gradient(180deg, #d7cfad, #9b906f);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.48),
+    0 22px 50px rgba(0, 0, 0, 0.55);
 }
 
 @media (max-width: 640px) {

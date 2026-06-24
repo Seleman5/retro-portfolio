@@ -1,38 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
-const navItems = ["About", "Experience", "Projects", "Skills", "Contact"];
-
-const sections = [
-  {
-    id: "about",
-    label: "About",
-    eyebrow: "01",
-    body: "I focus on quality-minded engineering, clear user experiences, and dependable delivery across web apps, test automation, and release workflows.",
-  },
-  {
-    id: "experience",
-    label: "Experience",
-    eyebrow: "02",
-    body: "Hands-on with automated testing, debugging, frontend development, and turning product expectations into stable software behavior.",
-  },
-  {
-    id: "projects",
-    label: "Projects",
-    eyebrow: "03",
-    body: "A curated set of test automation, developer tooling, and polished application work will live here as the portfolio grows.",
-  },
-  {
-    id: "skills",
-    label: "Skills",
-    eyebrow: "04",
-    body: "TypeScript, React, Next.js, Tailwind CSS, Playwright, QA strategy, CI workflows, accessibility checks, and user-focused development.",
-  },
-  {
-    id: "contact",
-    label: "Contact",
-    eyebrow: "05",
-    body: "Open to thoughtful software engineering, quality engineering, and product-minded development conversations.",
-  },
+const navItems = [
+  { label: "About", href: "/about" },
+  { label: "Experience", href: "/experience" },
+  { label: "Projects", href: "/projects" },
+  { label: "Skills", href: "/skills" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const metadata: Metadata = {
@@ -63,13 +37,13 @@ export default function Home() {
                   aria-label="Portfolio sections"
                 >
                   {navItems.map((item) => (
-                    <a
+                    <Link
                       className="rounded-sm border border-emerald-200/10 bg-emerald-200/[0.03] px-2.5 py-1.5 transition hover:border-emerald-200/35 hover:bg-emerald-200/10 hover:text-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-200/45"
-                      href={`#${item.toLowerCase()}`}
-                      key={item}
+                      href={item.href}
+                      key={item.href}
                     >
-                      {item}
-                    </a>
+                      {item.label}
+                    </Link>
                   ))}
                 </nav>
 
@@ -89,18 +63,18 @@ export default function Home() {
                       user-focused apps.
                     </p>
                     <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                      <a
+                      <Link
                         className="inline-flex items-center justify-center rounded-sm border border-emerald-200/70 bg-emerald-300 px-5 py-3 text-sm font-bold uppercase tracking-[0.1em] text-slate-950 shadow-[0_0_22px_rgba(110,231,183,0.25)] transition hover:bg-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-100 sm:tracking-[0.16em]"
-                        href="#projects"
+                        href="/projects"
                       >
                         View Projects
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="inline-flex items-center justify-center rounded-sm border border-amber-200/50 bg-amber-200/10 px-5 py-3 text-sm font-bold uppercase tracking-[0.1em] text-amber-100 transition hover:bg-amber-200/20 focus:outline-none focus:ring-2 focus:ring-amber-100/70 sm:tracking-[0.16em]"
-                        href="#contact"
+                        href="/contact"
                       >
                         Contact Me
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -121,26 +95,6 @@ export default function Home() {
                       </div>
                     </dl>
                   </aside>
-                </section>
-
-                <section className="grid gap-3 lg:grid-cols-5" aria-label="Prepared portfolio sections">
-                  {sections.map((section) => (
-                    <article
-                      className="rounded-sm border border-emerald-200/14 bg-slate-950/35 p-4 shadow-[inset_0_0_24px_rgba(16,185,129,0.04)]"
-                      id={section.id}
-                      key={section.id}
-                    >
-                      <p className="font-mono text-[0.68rem] font-bold uppercase tracking-[0.2em] text-amber-200/80">
-                        {section.eyebrow}
-                      </p>
-                      <h2 className="mt-3 text-lg font-semibold text-white">
-                        {section.label}
-                      </h2>
-                      <p className="mt-3 text-sm leading-6 text-slate-100/74">
-                        {section.body}
-                      </p>
-                    </article>
-                  ))}
                 </section>
               </div>
             </div>
