@@ -83,15 +83,21 @@ export default function Home() {
                     <dl className="mt-4 grid gap-3">
                       <div className="flex items-center justify-between gap-4 border-b border-emerald-200/10 pb-2">
                         <dt>Focus</dt>
-                        <dd className="text-right text-white">Quality + UX</dd>
+                        <dd className="text-right text-white">
+                          Development + Quality
+                        </dd>
                       </div>
                       <div className="flex items-center justify-between gap-4 border-b border-emerald-200/10 pb-2">
                         <dt>Mode</dt>
-                        <dd className="text-right text-white">Building</dd>
+                        <dd className="text-right text-white">
+                          Building Full-Stack Apps
+                        </dd>
                       </div>
                       <div className="flex items-center justify-between gap-4 border-b border-emerald-200/10 pb-2">
-                        <dt>Signal</dt>
-                        <dd className="text-right text-white">Clear</dd>
+                        <dt>Status</dt>
+                        <dd className="text-right text-white">
+                          Quality-Driven Engineer
+                        </dd>
                       </div>
                     </dl>
                   </aside>
