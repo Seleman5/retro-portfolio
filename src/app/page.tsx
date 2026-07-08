@@ -11,9 +11,9 @@ const navItems = [
 ];
 
 export const metadata: Metadata = {
-  title: "Seleman Shinwarie | Software Test Engineer / Developer",
+  title: "Seleman Shinwarie | Software Developer",
   description:
-    "Professional portfolio for Seleman Shinwarie, a Software Test Engineer and Developer.",
+    "Software developer portfolio for Seleman Shinwarie, featuring full-stack projects, mobile apps, quality engineering, and API-driven software.",
 };
 
 export default function Home() {
@@ -57,11 +57,14 @@ export default function Home() {
                       Seleman Shinwarie
                     </h1>
                     <p className="mt-3 font-mono text-xs uppercase tracking-[0.12em] text-emerald-200 sm:text-base sm:tracking-[0.22em]">
-                      Software Developer · Quality Engineering
+                      Software Developer
+                    </p>
+                    <p className="mt-5 max-w-xl text-sm leading-7 text-slate-100/72 sm:text-base">
+                      Building reliable web, mobile, and API-driven software.
                     </p>
                   </div>
 
-                  <aside className="border-l border-emerald-200/15 pl-5 font-mono text-xs uppercase tracking-[0.18em] text-emerald-100/70 sm:text-sm">
+                  <aside className="border-t border-emerald-200/15 pt-5 font-mono text-xs uppercase tracking-[0.18em] text-emerald-100/70 sm:text-sm lg:border-l lg:border-t-0 lg:pl-5 lg:pt-0">
                     <p className="text-emerald-200">Status</p>
                     <dl className="mt-4 grid gap-3">
                       <div className="flex items-center justify-between gap-4 border-b border-emerald-200/10 pb-2">
