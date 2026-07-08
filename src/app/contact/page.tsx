@@ -8,6 +8,11 @@ const contactRows = [
     href: "mailto:selemanshinwarie@yahoo.ca",
   },
   {
+    label: "Phone",
+    value: "647-853-8260",
+    href: "tel:+16478538260",
+  },
+  {
     label: "LinkedIn",
     value: "linkedin.com/in/seleman-shinwarie-5103112b8",
     href: "https://www.linkedin.com/in/seleman-shinwarie-5103112b8/",
@@ -101,10 +106,6 @@ export default function ContactPage() {
                     </div>
                   ))}
                 </section>
-
-                <p className="mt-5 rounded-sm border border-amber-200/20 bg-amber-200/10 p-4 font-mono text-xs uppercase leading-6 tracking-[0.12em] text-amber-100/85">
-                  Phone available upon request or through my resume.
-                </p>
               </div>
             </div>
           </div>
