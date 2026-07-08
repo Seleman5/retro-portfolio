@@ -34,7 +34,7 @@ export default function Home() {
 
               <div className="relative z-10 flex min-h-[min(68vh,690px)] flex-col gap-8 p-5 text-[#d8fff0] sm:p-7 lg:p-10">
                 <nav
-                  className="flex flex-wrap items-center gap-2 border-b border-emerald-200/15 pb-4 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-emerald-100/75 sm:gap-3 sm:tracking-[0.22em]"
+                  className="flex flex-wrap items-center gap-2 border-b border-emerald-200/15 pb-4 text-xs font-semibold uppercase tracking-[0.12em] text-emerald-100/75 sm:gap-3 sm:tracking-[0.2em]"
                   aria-label="Portfolio sections"
                 >
                   {navItems.map((item) => (
@@ -57,26 +57,8 @@ export default function Home() {
                       Seleman Shinwarie
                     </h1>
                     <p className="mt-3 font-mono text-xs uppercase tracking-[0.12em] text-emerald-200 sm:text-base sm:tracking-[0.22em]">
-                      Software Test Engineer / Developer
+                      Software Developer · Quality Engineering
                     </p>
-                    <p className="mt-6 max-w-2xl text-base leading-8 text-slate-100/86 sm:text-lg">
-                      I build reliable software, test automation, and polished
-                      user-focused apps.
-                    </p>
-                    <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                      <Link
-                        className="inline-flex items-center justify-center rounded-sm border border-emerald-200/70 bg-emerald-300 px-5 py-3 text-sm font-bold uppercase tracking-[0.1em] text-slate-950 shadow-[0_0_22px_rgba(110,231,183,0.25)] transition hover:bg-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-100 sm:tracking-[0.16em]"
-                        href="/projects"
-                      >
-                        View Projects
-                      </Link>
-                      <Link
-                        className="inline-flex items-center justify-center rounded-sm border border-amber-200/50 bg-amber-200/10 px-5 py-3 text-sm font-bold uppercase tracking-[0.1em] text-amber-100 transition hover:bg-amber-200/20 focus:outline-none focus:ring-2 focus:ring-amber-100/70 sm:tracking-[0.16em]"
-                        href="/contact"
-                      >
-                        Contact Me
-                      </Link>
-                    </div>
                   </div>
 
                   <aside className="border-l border-emerald-200/15 pl-5 font-mono text-xs uppercase tracking-[0.18em] text-emerald-100/70 sm:text-sm">
