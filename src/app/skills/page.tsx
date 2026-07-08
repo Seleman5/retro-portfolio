@@ -134,12 +134,22 @@ export default function SkillsPage() {
 
               <div className="relative z-10 flex min-h-[min(74vh,840px)] flex-col p-5 text-[#d8fff0] sm:p-7 lg:p-10">
                 <div className="border-b border-emerald-200/15 pb-5">
-                  <p className="font-mono text-xs uppercase tracking-[0.28em] text-amber-200/80">
-                    04 // Toolkit
-                  </p>
-                  <h1 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
-                    Skills
-                  </h1>
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <p className="font-mono text-xs uppercase tracking-[0.28em] text-amber-200/80">
+                        04 // Toolkit
+                      </p>
+                      <h1 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+                        Skills
+                      </h1>
+                    </div>
+                    <Link
+                      className="inline-flex w-fit items-center justify-center rounded-sm border border-emerald-200/60 bg-emerald-200/10 px-4 py-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-emerald-100 transition hover:bg-emerald-200/20 focus:outline-none focus:ring-2 focus:ring-emerald-100"
+                      href="/"
+                    >
+                      ← Home
+                    </Link>
+                  </div>
                   <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-100/82 sm:text-base">
                     My technical skills span full-stack development, automation,
                     API testing, databases, debugging, and quality-focused
@@ -200,12 +210,6 @@ export default function SkillsPage() {
                   </ul>
                 </section>
 
-                <Link
-                  className="mt-6 inline-flex w-fit items-center justify-center rounded-sm border border-emerald-200/60 bg-emerald-200/10 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-emerald-100 transition hover:bg-emerald-200/20 focus:outline-none focus:ring-2 focus:ring-emerald-100"
-                  href="/"
-                >
-                  ← Home
-                </Link>
               </div>
             </div>
           </div>

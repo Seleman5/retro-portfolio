@@ -26,22 +26,26 @@ export default function PortfolioPage({
               <div className="crt-scanlines" aria-hidden="true" />
               <div className="crt-glow" aria-hidden="true" />
 
-              <div className="relative z-10 flex min-h-[min(52vh,520px)] flex-col justify-center p-5 sm:p-8 lg:p-12">
-                <p className="font-mono text-xs uppercase tracking-[0.28em] text-amber-200/80">
-                  {eyebrow}
-                </p>
-                <h1 className="mt-5 text-4xl font-bold text-white sm:text-5xl">
-                  {title}
-                </h1>
-                <p className="mt-6 max-w-2xl text-base leading-8 text-slate-100/86 sm:text-lg">
-                  {description}
-                </p>
-                <Link
-                  className="mt-9 inline-flex w-fit items-center justify-center rounded-sm border border-emerald-200/60 bg-emerald-200/10 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-emerald-100 transition hover:bg-emerald-200/20 focus:outline-none focus:ring-2 focus:ring-emerald-100"
-                  href="/"
-                >
-                  ← Home
-                </Link>
+              <div className="relative z-10 flex min-h-[min(52vh,520px)] flex-col p-5 sm:p-8 lg:p-12">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                  <p className="font-mono text-xs uppercase tracking-[0.28em] text-amber-200/80">
+                    {eyebrow}
+                  </p>
+                  <Link
+                    className="inline-flex w-fit items-center justify-center rounded-sm border border-emerald-200/60 bg-emerald-200/10 px-4 py-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-emerald-100 transition hover:bg-emerald-200/20 focus:outline-none focus:ring-2 focus:ring-emerald-100"
+                    href="/"
+                  >
+                    ← Home
+                  </Link>
+                </div>
+                <div className="my-auto">
+                  <h1 className="mt-5 text-4xl font-bold text-white sm:text-5xl">
+                    {title}
+                  </h1>
+                  <p className="mt-6 max-w-2xl text-base leading-8 text-slate-100/86 sm:text-lg">
+                    {description}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

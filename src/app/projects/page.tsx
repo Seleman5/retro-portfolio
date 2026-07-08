@@ -56,7 +56,7 @@ export default function ProjectsPage() {
               <div className="crt-glow" aria-hidden="true" />
 
               <div className="relative z-10 flex min-h-[min(62vh,680px)] flex-col p-5 text-[#d8fff0] sm:p-7 lg:p-10">
-                <div className="flex flex-wrap items-end justify-between gap-4 border-b border-emerald-200/15 pb-5">
+                <div className="flex flex-col gap-4 border-b border-emerald-200/15 pb-5 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <p className="font-mono text-xs uppercase tracking-[0.28em] text-amber-200/80">
                       03 // Project archive
@@ -65,9 +65,17 @@ export default function ProjectsPage() {
                       Projects
                     </h1>
                   </div>
-                  <p className="font-mono text-xs uppercase tracking-[0.16em] text-emerald-100/65">
-                    02 entries loaded
-                  </p>
+                  <div className="flex flex-col items-start gap-3 sm:items-end">
+                    <Link
+                      className="inline-flex w-fit items-center justify-center rounded-sm border border-emerald-200/60 bg-emerald-200/10 px-4 py-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-emerald-100 transition hover:bg-emerald-200/20 focus:outline-none focus:ring-2 focus:ring-emerald-100"
+                      href="/"
+                    >
+                      ← Home
+                    </Link>
+                    <p className="font-mono text-xs uppercase tracking-[0.16em] text-emerald-100/65">
+                      02 entries loaded
+                    </p>
+                  </div>
                 </div>
 
                 <div className="mt-5 grid gap-4 xl:grid-cols-2">
@@ -109,12 +117,6 @@ export default function ProjectsPage() {
                   ))}
                 </div>
 
-                <Link
-                  className="mt-6 inline-flex w-fit items-center justify-center rounded-sm border border-emerald-200/60 bg-emerald-200/10 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-emerald-100 transition hover:bg-emerald-200/20 focus:outline-none focus:ring-2 focus:ring-emerald-100"
-                  href="/"
-                >
-                  ← Home
-                </Link>
               </div>
             </div>
           </div>
