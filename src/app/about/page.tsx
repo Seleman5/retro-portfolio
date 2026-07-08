@@ -63,26 +63,34 @@ export default function AboutPage() {
 
                   <div>
                     <p className="max-w-2xl text-base leading-8 text-slate-100/86 sm:text-lg">
-                      I&apos;m a Toronto-based software developer with a
-                      Computer Science degree from Carleton University. My work
-                      brings together full-stack development, quality
-                      engineering, and automation with a strong focus on
-                      building reliable, polished applications.
+                      I&apos;m Seleman Shinwarie, a Toronto-based software
+                      developer with a Bachelor of Computer Science from
+                      Carleton University. I enjoy building practical, reliable
+                      software that solves real problems, from full-stack web
+                      applications to mobile app experiences and API-driven
+                      systems.
                     </p>
                     <p className="mt-5 max-w-2xl text-base leading-8 text-slate-100/78 sm:text-lg">
-                      I have hands-on experience with frontend and backend
-                      development, API testing, SQL validation, debugging, and
-                      delivery workflows. I enjoy turning requirements into
-                      clean user experiences and dependable software behavior.
+                      My background includes hands-on development with React,
+                      Next.js, Node.js, Express, JavaScript, Java, SQL, and
+                      modern development workflows. I like working across the
+                      stack, connecting frontend interfaces with backend logic,
+                      databases, and clean user-focused functionality.
+                    </p>
+                    <p className="mt-5 max-w-2xl text-base leading-8 text-slate-100/78 sm:text-lg">
+                      Alongside development, I bring a strong quality
+                      engineering mindset from working with automation, API
+                      validation, SQL verification, debugging, and production
+                      release support. That experience helps me build software
+                      with reliability, maintainability, and real-world users in
+                      mind.
                     </p>
                     <div className="mt-6 grid gap-3 sm:grid-cols-2">
                       {[
-                        "Full-stack development",
-                        "Quality engineering",
-                        "API testing",
-                        "SQL validation",
-                        "Debugging",
-                        "User-focused applications",
+                        "Full-stack application development",
+                        "API-driven software",
+                        "Clean, user-focused interfaces",
+                        "Reliable and maintainable systems",
                       ].map((item) => (
                         <div
                           className="rounded-sm border border-emerald-200/14 bg-slate-950/30 px-3 py-2 font-mono text-xs uppercase tracking-[0.12em] text-emerald-100/75"
